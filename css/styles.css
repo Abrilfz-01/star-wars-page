@@ -133,3 +133,42 @@ header{
     color: var(--secondary-color);
     cursor: pointer;
 }
+
+
+
+/* ************************** */
+/*           INICIO           */
+/* ************************** */
+.inicio{
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--background-color);
+    border-bottom: 2.5px solid var(--font-color);
+}
+
+.inicio img{
+    width: 650px;
+    height: 460px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.container-1{
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.container-1 h1{
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 60px;
+    color: var(--background-color);
+    -webkit-text-stroke: 2px #ecd63a;
+}
+
+.container-1 p{
+    font-family: var(--font-header-secondary);
+    font-size: 20px;
+    color: var(--secondary-color);
+}
