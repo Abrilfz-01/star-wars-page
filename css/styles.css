@@ -133,7 +133,3 @@ header{
     color: var(--secondary-color);
     cursor: pointer;
 }
-/*
-.navbar .fa-bars{
-    display: none;
-}
