@@ -139,7 +139,8 @@ header{
 /* ************************** */
 /*           INICIO           */
 /* ************************** */
-.inicio{
+main .inicio{
+    max-width: 1263px;
     padding-bottom: 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -147,24 +148,25 @@ header{
     border-bottom: 2.5px solid var(--font-color);
 }
 
-.inicio img{
-    width: 650px;
+main .inicio img{
+    width: 610px;
     height: 460px;
     margin-left: 20px;
-    margin-right: 0;
 }
 
-.container-1{
+.inicio .container-1{
+    width: 540px;
     margin-left: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.container-1 h1{
+.container-1 .titulo{
     font-family: var(--font-primary);
     font-weight: 700;
     font-size: 60px;
     color: var(--background-color);
     -webkit-text-stroke: 2px #ecd63a;
+    margin-bottom: 30px;
 }
 
 .container-1 p{
@@ -195,8 +197,9 @@ header{
 }
 
 .personajes .cards{
-    display: flex;
-    margin-left: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 20px;
 }
 
 
