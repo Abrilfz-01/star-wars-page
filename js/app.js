@@ -1,9 +1,13 @@
 let containercard = document.querySelector('#characters')
 const URLBase = 'https://swapi.dev/api/'
 const endpointPersonajes = 'people/'
+let siguiente = document.querySelector('#siguiente') 
+let anterior = document.querySelector('#anterior')
+let pagina = 1
+
 
 const obtenerPersonajes=()=>{
-    fetch(`${URLBase}${endpointPersonajes}`)
+    fetch(`${URLBase}${endpointPersonajes}?page=${pagina}`)
     .then(response=>response.json()
     .then(data=>createCards(data.results))
     .catch(error=>{
@@ -16,6 +20,7 @@ obtenerPersonajes()
 
 
 const createCards=(personajes)=>{
+    containercard.innerHTML = ''
     for(let personaje of personajes){
         const{name, height, mass, gender} = personaje
         containercard.innerHTML += `<div class="card-p">
@@ -28,6 +33,28 @@ const createCards=(personajes)=>{
     }
 }
 
+
+siguiente.addEventListener('click',()=>{
+    pagina++
+    obtenerPersonajes()
+})
+
+anterior.addEventListener('click',()=>{
+    pagina--
+    obtenerPersonajes()
+})
+
+
+document.addEventListener("keyup", e=>{
+    
+    if (e.target.matches('#buscador')){
+        document.querySelectorAll(".card-p").forEach(personaje =>{
+            personaje.textContent.toLowerCase().includes(e.target.value.toLowerCase())
+                ?personaje.classList.remove("filtro")
+                :personaje.classList.add("filtro")
+        })
+    }
+})
 
 
 
