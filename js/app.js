@@ -45,18 +45,16 @@ anterior.addEventListener('click',()=>{
 })
 
 
-document.addEventListener("keyup", e=>{
-    
-    if (e.target.matches('#buscador')){
-        document.querySelectorAll(".card-p").forEach(personaje =>{
-            personaje.textContent.toLowerCase().includes(e.target.value.toLowerCase())
-                ?personaje.classList.remove("filtro")
-                :personaje.classList.add("filtro")
+document.addEventListener('keyup',e =>{
+    if(e.target.matches('.busc')){
+        document.querySelectorAll('.card-p').forEach((tarjeta)=>{
+            tarjeta.textContent.toLocaleLowerCase().includes(e.target.value)?tarjeta.classList.remove('filter'):tarjeta.classList.add('filter')
         })
+        if (e.key === 'Escape'){
+            e.target.value = '';
+        }
     }
 })
-
-
 
 
 

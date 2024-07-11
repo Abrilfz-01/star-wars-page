@@ -297,3 +297,9 @@ main .inicio img{
     color: var(--background-color);
     cursor: pointer;
 }
+
+.filter{
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
