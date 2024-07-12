@@ -71,16 +71,12 @@
         justify-content: center;
         align-items: center;
         margin-left: 10px;
+        width: 1024px;
+        margin-left: 30px;
     }
 
 
     /*Edicion de las tarjetas de los personajes*/
-    .personajes .cards{
-        width: 1024px;
-        align-items: center;
-        margin-left: 30px;
-    }
-
     .personajes .cards .card-p{
         width: 260px;
     }
@@ -95,6 +91,67 @@
 
     /*Edicion de los botones*/
     .personajes .back{
+        margin-left: 50px;
+    }
+
+
+    /*Inicio del diseño de la Seccion Naves*/
+    .naves .cards{
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        width: 1024px;
+        margin-left: 30px;
+    }
+
+
+    /*Edicion de las tarjetas de los Naves*/
+    .naves .cards .card-n{
+        width: 260px;
+    }
+    
+    .cards .card-n h1{
+        font-size: 32px;
+    }
+    
+    .cards .card-n p{
+        font-size: 20px;
+    }
+
+    /*Edicion de los botones*/
+    .naves .back{
+        margin-left: 50px;
+    }
+
+
+
+    /*Inicio del diseño de la Seccion Peliculas*/
+    .peliulas .cards{
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        width: 1024px;
+        margin-left: 30px;
+    }
+
+
+    /*Edicion de las tarjetas de los Peliculas*/
+    .peliculas .cards .card-pel{
+        width: 280px;
+        height: 380px;
+    }
+    
+    .cards .card-pel h1{
+        font-size: 32px;
+    }
+    
+    .cards .card-pel p{
+        font-size: 20px;
+        width: 200px;
+    }
+
+    /*Edicion de los botones*/
+    .peliculas .back{
         margin-left: 50px;
     }
 }
@@ -175,11 +232,6 @@
     .personajes .cards{
         justify-content: center;
         align-items: center;
-    }
-
-
-    /*Edicion de las tarjetas de los personajes*/
-    .personajes .cards{
         width: 768px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -187,6 +239,8 @@
         margin-left: 30px;
     }
 
+
+    /*Edicion de las tarjetas de los personajes*/
     .personajes .cards .card-p{
         width: 290px;
     }
@@ -204,6 +258,70 @@
         margin-left: 50px;
     }
 
+
+
+    /*Inicio del diseño de la Seccion Naves*/
+    .naves .cards{
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+
+    /*Edicion de las tarjetas de los Naves*/
+    .naves .cards .card-n{
+        width: 290px;
+    }
+    
+    .cards .card-n h1{
+        font-size: 30px;
+    }
+    
+    .cards .card-n p{
+        font-size: 20px;
+    }
+
+    /*Edicion de los botones*/
+    .naves .back{
+        margin-left: 50px;
+    }
+
+
+    /*Inicio del diseño de la Seccion Peliculas*/
+    .peliculas .cards{
+        justify-content: center;
+        align-items: center;
+        width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+
+    /*Edicion de las tarjetas de los Peliculas*/
+    .peliculas .cards .card-pel{
+        width: 290px;
+        height: 370px;
+    }
+    
+    .cards .card-pel h1{
+        font-size: 30px;
+    }
+    
+    .cards .card-pel p{
+        font-size: 20px;
+        width: 200px;
+    }
+
+    /*Edicion de los botones*/
+    .peliculas .back{
+        margin-left: 50px;
+    }
 }
 
 
@@ -304,11 +422,6 @@
         justify-content: center;
         align-items: center;
         margin-left: 10px;
-    }
-
-
-    /*Edicion de las tarjetas de los personajes*/
-    .personajes .cards{
         width: 480px;
         display: flex;
         flex-direction: column;
@@ -316,6 +429,8 @@
         margin-left: 0;
     }
 
+
+    /*Edicion de las tarjetas de los personajes*/
     .personajes .cards .card-p{
         width: 320px;
     }
@@ -332,6 +447,79 @@
     .personajes .button-container{
         margin-left: 20px;
     }
+
+
+
+    /*Inicio del diseño de la Seccion Naves*/
+    .naves .titulo{
+        font-size: 40px;
+    }
+    
+    .naves .cards{
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+
+    /*Edicion de las tarjetas de las Naves*/
+    .naves .cards .card-n{
+        width: 350px;
+    }
+    
+    .cards .card-n h1{
+        font-size: 32px;
+    }
+    
+    .cards .card-n p{
+        font-size: 19px;
+    }
+
+    /*Edicion de los botones*/
+    .naves .button-container{
+        margin-left: 20px;
+    }
+
+
+
+    /*Inicio del diseño de la Seccion Peliculas*/
+    .peliculas .titulo{
+        font-size: 40px;
+    }
+    
+    .peliculas .cards{
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+
+    /*Edicion de las tarjetas de las Peliculas*/
+    .peliculas .cards .card-pel{
+        width: 350px;
+    }
+    
+    .peliculas .cards .card-pel h1{
+        font-size: 32px;
+    }
+    
+    .cards .card-pel p{
+        font-size: 19px;
+    }
+
+    /*Edicion de los botones*/
+    .peliculas .button-container{
+        margin-left: 20px;
+    }
+
 }
 
 
@@ -368,7 +556,7 @@
         display: none;
     }
 
-    .container-1{
+    .inicio .container-1{
         align-items: center;
         justify-content: center;
         margin-top: 30px;
@@ -376,12 +564,12 @@
         margin-left: 40px;
     }
 
-    .container-1 .titulo{
+    .inicio .container-1 .titulo{
         font-size: 45px;
         width: 250px;
     }
 
-    .container-1 p{
+    .inicio .container-1 p{
         font-size: 17px;
         width: 250px;
     }
@@ -428,6 +616,104 @@
     }
 
     .personajes .next{
+        font-size: 20px;
+        padding: 12px 15px;
+    }
+
+
+
+    /*Inicio del diseño de la Seccion Naves*/
+    .naves .titulo{
+        font-size: 35px;
+    }
+    
+    .naves .cards{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    /*Edicion de las tarjetas de las Naves*/
+    .naves .cards .card-n{
+        width: 230px;
+        height: 280px;
+    }
+
+    .cards .card-n h1{
+        font-size: 27px;
+    }
+
+    .cards .card-n p{
+        font-size: 17px;
+        margin-left: 30px;
+    }
+
+    /*Edicion de los botones*/
+    .naves .button-container{
+        margin-left: 0;
+    }
+
+    .naves .back{
+        font-size: 20px;
+        padding: 12px 15px;
+        margin-left: 40px;
+    }
+
+    .naves .next{
+        font-size: 20px;
+        padding: 12px 15px;
+    }
+
+
+
+
+    /*Inicio del diseño de la Seccion Peliculas*/
+    .peliculas .titulo{
+        font-size: 35px;
+    }
+    
+    .peliculas .cards{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+
+
+    /*Edicion de las tarjetas de las Peliculas*/
+    .peliculas .cards .card-pel{
+        width: 250px;
+        height: 340px;
+    }
+
+    .peliculas .card-pel h1{
+        font-size: 27px;
+    }
+
+    .peliculas .card-pel p{
+        font-size: 17px;
+        margin-left: 20px;
+        width: 200px;
+    }
+
+
+    /*Edicion de los botones*/
+    .peliculas .button-container{
+        margin-left: 0;
+    }
+
+    .peliculas .back{
+        font-size: 20px;
+        padding: 12px 15px;
+        margin-left: 40px;
+    }
+
+    .peliculas .next{
         font-size: 20px;
         padding: 12px 15px;
     }
