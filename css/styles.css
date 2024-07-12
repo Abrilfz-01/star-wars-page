@@ -437,3 +437,129 @@ main .inicio{
 
 
 
+/* ************************** */
+/*         PELICULAS          */
+/* ************************** */
+.peliculas{
+    background-color: var(--background-color);
+    border-bottom: 2px solid var(--font-color);
+    padding-bottom: 40px;
+}
+
+.peliculas .titulo{
+    font-family: var(--font-primary);
+    text-align: center;
+    font-size: 45px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-top: 40px;
+    color: var(--primary-color);
+}
+
+.peliculas .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 40px;
+}
+
+
+/*EDICION DE LAS TARJETAS DE LAS PELICULAS*/
+.peliculas .card-pel{
+    width: 340px;
+    height: 290px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: #35343a;
+}
+
+.peliculas .card-pel:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2)
+}
+
+.peliculas .card-pel h1{
+    font-family: var(--font-header);
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--font-card-color);
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.peliculas .card-pel p{
+    font-family: var(--font-header-secondary);
+    font-size: 18px;
+    color: var(--font-card-color);
+    margin-top: 5px;
+    margin-left: 40px;
+    text-align: justify;
+}
+
+.peliculas .card-pel a{
+    font-family: var(--font-header);
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20px;
+    color: var(--primary-color);
+    border: 1.5px solid var(--primary-color);
+    border-radius: 8px;
+    transition: background-color 1s, color 1s;
+}
+
+.peliculas .card-pel a:hover{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.peliculas .back{
+    background: var(--background-color);
+    font-family: var(--font-header);
+    font-size: 25px;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: background 1s, color 1s;
+}
+
+.peliculas .back:hover{
+    background: var(--primary-color);
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.peliculas .next{
+    background: var(--background-color);
+    font-family: var(--font-header);
+    font-size: 25px;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 1s, color 1s;
+}
+
+.peliculas .next:hover{
+    background: var(--primary-color);
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+.filter_p{
+    visibility: hidden;
+    opacity: 0;
+    order: 1;
+}
