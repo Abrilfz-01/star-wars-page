@@ -9,6 +9,8 @@ let siguiente = document.querySelector('#siguiente')
 let anterior = document.querySelector('#anterior')
 let siguienteN = document.querySelector('#siguienteN') 
 let anteriorN = document.querySelector('#anteriorN')
+let siguienteP = document.querySelector('#siguienteP') 
+let anteriorP = document.querySelector('#anteriorP')
 let pagina = 1
 
 
@@ -116,15 +118,56 @@ document.addEventListener('keyup',e =>{
 })
 
 
+
 /* Seccion para obtener las Peliculas */
+const obtenerPeliculas=()=>{
+    fetch(`${URLBase}${endpointPeliculas}?page=${pagina}`)
+    .then(response=>response.json()
+    .then(data=>createCardsPeliculas(data.results))
+    .catch(error=>{
+        console.error('Error al obtener las peliculas', error)
+    })
+)
+}
+
+obtenerPeliculas()
+
+const createCardsPeliculas=(naves)=>{
+    containercardPeliculas.innerHTML = ''
+    for(let pelicula of peliculas){
+        const{title, episode_id, director, producer, release_date} = pelicula
+        containercardPeliculas.innerHTML += `<div class="card-pel">
+        <h1>${title}</h1>
+        <p>Edicion: ${episode_id} </p>
+        <p>Director: ${director}</p>
+        <p>Productor: ${producer}</p>
+        <p>Fecha de Lanzamiento: ${release_date}</p>
+        <a href="#">Leer mas</a>
+        </div>`
+    }
+}
+
+siguienteP.addEventListener('click',()=>{
+    pagina++
+    obtenerPeliculas()
+})
+
+anteriorP.addEventListener('click',()=>{
+    pagina--
+    obtenerPeliculas()
+})
 
 
-
-
-
-
-
-
+document.addEventListener('keyup',e =>{
+    if(e.target.matches('.busc')){
+        document.querySelectorAll('.card-pel').forEach((tarjeta)=>{
+            tarjeta.textContent.toLocaleLowerCase().includes(e.target.value)?tarjeta.classList.remove('filter_p'):tarjeta.classList.add('filter_p')
+        })
+        if (e.key === 'Escape'){
+            e.target.value = '';
+        }
+    }
+})
 
 
 
