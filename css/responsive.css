@@ -5,17 +5,59 @@
     --font-color: #c5c5c5;
     --font-card-color: white;
 }
+
+
+/* ****************************** */
+/*       RESPONSIVE 1920PX        */
+/* ****************************** */
+@media(max-width: 1920px){
+    .navbar{
+        width: 1400px;
+        margin: 0 auto;
+    }
+
+    /*Inicio del diseño de la Seccion Inicio*/
+    .inicio .container-1{
+        margin-left: 150px;
+        margin-bottom: 40px;
+    }
+
+    .inicio .img-ppal{
+        width: 800px;
+        height: 490px;
+    }
+
+    .inicio .container-1 .titulo{
+        font-size: 70px;
+    }
+
+    .inicio .container-1 p{
+        width: 800px;
+        font-size: 25px;
+    }
+
+
+    /*Inicio del diseño de la Seccion Personajes*/
+    .personajes .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 90px;
+    }
+
+    .personajes .back{
+        margin-left: 110px;
+    }
+}
+
+
+
 /* ****************************** */
 /*       RESPONSIVE 1440PX        */
 /* ****************************** */
 @media(max-width: 1440px){
     /*Inicio del diseño de la seccion Inicio*/
-    .inicio{
-        width: 1440px;
-    }
-
-    .inicio img{
-        width: 700px;
+    .inicio .img-ppal{
+        width: 800px;
     }
 
     .container-1{
@@ -25,6 +67,27 @@
         width: 650px;
     }
     /*Fin del diseño de la seccion Inicio*/
+
+    /*Inicio del diseño de la Seccion Personajes*/
+    .personajes .cards{
+        margin-left: 100px;
+    }
+
+    /*Inicio del diseño de los botones*/
+    .personajes .back{
+        margin-left: 120px;
+    }
+}
+
+
+/* ****************************** */
+/*       RESPONSIVE 1280PX        */
+/* ****************************** */
+@media(max-width: 1280px){
+    /*Inicio del diseño de la Seccion Inicio*/
+    main .inicio .img-ppal{
+        width: 650px;
+    }
 }
 
 
@@ -33,6 +96,22 @@
 /*       RESPONSIVE 1024PX        */
 /* ****************************** */
 @media(max-width: 1024px){
+    /*Inicio del diseño de la Seccion Inicio*/
+    .inicio .container-1 h1{
+        margin-top: 10px;
+    }
+
+    .inicio .container-1 p{
+        width: 450px;
+    }
+
+    main .inicio .img-ppal{
+        width: 443px;
+        height: 490px;
+        margin-left: 0;
+    }
+
+
     /*Inicio del diseño de la Seccion Personajes*/
     .personajes .cards{
         justify-content: center;
@@ -44,14 +123,12 @@
     /*Edicion de las tarjetas de los personajes*/
     .personajes .cards{
         width: 1024px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         align-items: center;
         margin-left: 30px;
     }
 
     .personajes .cards .card-p{
-        width: 250px;
+        width: 260px;
     }
     
     .cards .card-p h1{
@@ -60,6 +137,11 @@
     
     .cards .card-p p{
         font-size: 20px;
+    }
+
+    /*Edicion de los botones*/
+    .personajes .back{
+        margin-left: 50px;
     }
 }
 
@@ -123,11 +205,14 @@
         display: none;
     }
 
-    .container-1{
+    .inicio .container-1{
         margin-top: 30px;
         margin-bottom: 50px;
         margin-left: 60px;
-        width: 650px;
+    }
+
+    .inicio .container-1 p{
+        width: 600px;
     }
     /*Fin del diseño de la seccion Inicio*/
 
@@ -136,7 +221,6 @@
     .personajes .cards{
         justify-content: center;
         align-items: center;
-        margin-left: 10px;
     }
 
 
@@ -159,6 +243,11 @@
     
     .cards .card-p p{
         font-size: 20px;
+    }
+
+    /*Edicion de los botones*/
+    .personajes .back{
+        margin-left: 50px;
     }
 
 }
@@ -233,20 +322,21 @@
         display: none;
     }
 
-    .container-1{
+    .inicio .container-1{
         margin-top: 30px;
         margin-bottom: 50px;
         margin-left: 60px;
         width: 350px;
     }
 
-    .container-1 .titulo{
+    .inicio .container-1 .titulo{
         font-size: 55px;
 
     }
 
-    .container-1 p{
+    .inicio .container-1 p{
         font-size: 20px;
+        width: 370px;
     }
     /*Fin del diseño de la seccion Inicio*/
 
@@ -273,7 +363,7 @@
     }
 
     .personajes .cards .card-p{
-        width: 300px;
+        width: 320px;
     }
     
     .cards .card-p h1{
@@ -282,6 +372,11 @@
     
     .cards .card-p p{
         font-size: 19px;
+    }
+
+    /*Edicion de los botones*/
+    .personajes .button-container{
+        margin-left: 20px;
     }
 }
 
@@ -356,7 +451,7 @@
     /*Edicion de las tarjetas de los personajes*/
     .personajes .cards .card-p{
         width: 230px;
-        height: 250px;
+        height: 280px;
     }
 
     .cards .card-p h1{
@@ -365,5 +460,21 @@
 
     .cards .card-p p{
         font-size: 17px;
+    }
+
+    /*Edicion de los botones*/
+    .personajes .button-container{
+        margin-left: 0;
+    }
+
+    .personajes .back{
+        font-size: 20px;
+        padding: 12px 15px;
+        margin-left: 40px;
+    }
+
+    .personajes .next{
+        font-size: 20px;
+        padding: 12px 15px;
     }
 }
