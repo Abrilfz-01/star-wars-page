@@ -49,6 +49,20 @@ anterior.addEventListener('click',()=>{
 })
 
 
+document.addEventListener('keyup',e =>{
+    if(e.target.matches('.busc')){
+        document.querySelectorAll('.card-p').forEach((tarjeta)=>{
+            tarjeta.textContent.toLocaleLowerCase().includes(e.target.value)?tarjeta.classList.remove('filter'):tarjeta.classList.add('filter')
+        })
+        if (e.key === 'Escape'){
+            e.target.value = '';
+        }
+    }
+})
+
+
+
+
 /* Seccion para obtener las Naves */
 const obtenerNaves=()=>{
     fetch(`${URLBase}${endpointNaves}?page=${pagina}`)
@@ -77,30 +91,32 @@ const createCardsNaves=(naves)=>{
 }
 
 
-siguiente.addEventListener('click',()=>{
+siguiente_n.addEventListener('click',()=>{
     pagina++
     obtenerNaves()
 })
 
-anterior.addEventListener('click',()=>{
+anterior_n.addEventListener('click',()=>{
     pagina--
     obtenerNaves()
 })
 
-
-
-
-
 document.addEventListener('keyup',e =>{
     if(e.target.matches('.busc')){
-        document.querySelectorAll('.card-p').forEach((tarjeta)=>{
-            tarjeta.textContent.toLocaleLowerCase().includes(e.target.value)?tarjeta.classList.remove('filter'):tarjeta.classList.add('filter')
+        document.querySelectorAll('.card-n').forEach((tarjeta)=>{
+            tarjeta.textContent.toLocaleLowerCase().includes(e.target.value)?tarjeta.classList.remove('filter_n'):tarjeta.classList.add('filter_n')
         })
         if (e.key === 'Escape'){
             e.target.value = '';
         }
     }
 })
+
+
+/* Seccion para obtener las Naves */
+
+
+
 
 
 
