@@ -5,52 +5,6 @@
     --font-color: #c5c5c5;
     --font-card-color: white;
 }
-
-
-/* ****************************** */
-/*       RESPONSIVE 1920PX        */
-/* ****************************** */
-@media(max-width: 1920px){
-    .navbar{
-        width: 1400px;
-        margin: 0 auto;
-    }
-
-    /*Inicio del diseño de la Seccion Inicio*/
-    .inicio .container-1{
-        margin-left: 150px;
-        margin-bottom: 40px;
-    }
-
-    .inicio .img-ppal{
-        width: 800px;
-        height: 490px;
-    }
-
-    .inicio .container-1 .titulo{
-        font-size: 70px;
-    }
-
-    .inicio .container-1 p{
-        width: 800px;
-        font-size: 25px;
-    }
-
-
-    /*Inicio del diseño de la Seccion Personajes*/
-    .personajes .cards{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-left: 90px;
-    }
-
-    .personajes .back{
-        margin-left: 110px;
-    }
-}
-
-
-
 /* ****************************** */
 /*       RESPONSIVE 1440PX        */
 /* ****************************** */
@@ -478,3 +432,67 @@
         padding: 12px 15px;
     }
 }
+
+
+
+
+
+/*   
+@media(max-width: 1920px){
+    .navbar{
+        width: 1400px;
+        margin: 0 auto;
+    }
+
+    .navbar .menu a{
+        font-size: 25px;
+    }
+
+    .inicio .container-1{
+        margin-left: 150px;
+        margin-bottom: 40px;
+    }
+
+    .inicio .img-ppal{
+        width: 800px;
+        height: 490px;
+    }
+
+    .inicio .container-1 .titulo{
+        font-size: 70px;
+    }
+
+    .inicio .container-1 p{
+        width: 800px;
+        font-size: 25px;
+    }
+
+
+    .personajes .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 90px;
+    }
+
+    .personajes .card-p{
+        width: 360px;
+        height: 300px;
+    }
+
+    .personajes .card-p h1{
+        font-size: 35px;
+    }
+
+    .personajes .card-p p{
+        font-size: 23px;
+    }
+
+    .personajes .card-p a{
+        font-size: 23px;
+    }
+
+
+    .personajes .back{
+        margin-left: 110px;
+    }   
+}*/
