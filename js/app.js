@@ -132,7 +132,7 @@ const obtenerPeliculas=()=>{
 
 obtenerPeliculas()
 
-const createCardsPeliculas=(naves)=>{
+const createCardsPeliculas=(peliculas)=>{
     containercardPeliculas.innerHTML = ''
     for(let pelicula of peliculas){
         const{title, episode_id, director, producer, release_date} = pelicula
