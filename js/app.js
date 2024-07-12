@@ -1,11 +1,14 @@
 let containercardPersonajes = document.querySelector('#characters')
 let containercardNaves = document.querySelector('#spaceships')
+let containercardPeliculas = document.querySelector('#films')
 const URLBase = 'https://swapi.dev/api/'
 const endpointPersonajes = 'people/'
 const endpointNaves = 'starships/'
 const endpointPeliculas = 'films/'
 let siguiente = document.querySelector('#siguiente') 
 let anterior = document.querySelector('#anterior')
+let siguienteN = document.querySelector('#siguienteN') 
+let anteriorN = document.querySelector('#anteriorN')
 let pagina = 1
 
 
@@ -91,12 +94,12 @@ const createCardsNaves=(naves)=>{
 }
 
 
-siguiente_n.addEventListener('click',()=>{
+siguienteN.addEventListener('click',()=>{
     pagina++
     obtenerNaves()
 })
 
-anterior_n.addEventListener('click',()=>{
+anteriorN.addEventListener('click',()=>{
     pagina--
     obtenerNaves()
 })
@@ -113,7 +116,7 @@ document.addEventListener('keyup',e =>{
 })
 
 
-/* Seccion para obtener las Naves */
+/* Seccion para obtener las Peliculas */
 
 
 
